@@ -15,7 +15,7 @@
 
 .title-slide h1 {
   color: #41717a;
-  margin-top: 120px;
+  margin-top: 150px;
 }
 .title-slide h2{
   color: #41717a; 
@@ -28,6 +28,8 @@
 
 h1 {
   color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 75px;
 }
 
 .title-slide .remark-slide-number {
@@ -40,4 +42,29 @@ h1 {
   margin-right: 10px;
   color: #000000; /* white */
   opacity: 1; /* default: 0.5 */
+}
+
+#air_timer {
+  background-color: black;
+  background-image: url(resources/media/air_brick_white.jpg);
+  background-size: auto;
+}
+
+#air_timer.running {
+  background-color: black;
+  background-image: url(resources/media/air_brick_white.jpg);
+  background-size: auto;
+  border-color: #fdd906;
+}
+#air_timer.finished {
+  background-color: #ffffff;
+  background-image: url(resources/media/air_brick_teal.jpg);
+  background-size: auto;
+}
+#air_timer.running .digits {
+  color: #fbc611;
+}
+
+#air_timer.finished .digits {
+  color: #d83a20;
 }
