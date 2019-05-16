@@ -10,7 +10,7 @@ author: |
     [Manager, Data Analysis - AACSB International]{style="font-weight:lighter;font-size:1em"}\
     2019-05-30 @AIR Forum\
     \
-    [`r fontawesome::fa(name = "linkedin", height= "36pt", fill = "#41717a")`](www.linkedin.com/in/jdbarillas/?locale=en_US)
+    [`r fontawesome::fa(name = "linkedin", height= "36pt", fill = "#41717a")`](https://www.linkedin.com/in/jdbarillas/)
     [`r fontawesome::fa(name = "github-square", height= "36pt", fill = "#41717a")`](https://github.com/jdbarillas)
     [`r fontawesome::fa(name = "twitter-square", height= "36pt", fill = "#41717a")`](https://twitter.com/jdbarillas)
 direction: false
@@ -26,4 +26,13 @@ output:
       self_contained: false
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
 # Session Outline
+
+```{r}
+countdown::countdown(minutes = 0, seconds = 5, left = 0, id = "air_timer", font_size = "1.5em")
+```
+
