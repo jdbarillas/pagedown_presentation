@@ -16,19 +16,12 @@ author: |
 direction: false
 lang: "en"
 output:
-  pagedown::html_paged:
-    css:
-    - custom-fonts.css
-    - custom-page.css
-    - custom.css
-    toc: true
-    self_contained: false
+  xaringan::moon_reader: 
+    css: ["default", "custom-slides.css", "custom-font.css"]
+    nature: 
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      self_contained: false
 ---
-
-```{r, eval=FALSE}
-files <- c("default-fonts", "default-page", "default")
-from <- pagedown:::pkg_resource(paste0("css/", files, ".css"))
-to <- c("custom-fonts.css", "custom-page.css", "custom.css")
-file.copy(from = from, to = to)
-```
 
