@@ -6,22 +6,24 @@ footer: |
 subtitle: |
   with `r fontawesome::fa(name = "r-project", height= "54pt", fill = "#165caa")` and R Markdown
 author: |
-    Joshua D. Barillas   
-    [Manager, Data Analysis - AACSB International]{style="font-weight:lighter;font-size:0.7em"}\
+    [Joshua D. Barillas]{style="font-lighter:bold;font-size:1em"} \
+    [Manager, Data Analysis - AACSB International]{style="font-weight:lighter;font-size:1em"}\
     2019-05-30 @AIR Forum\
     \
-    [`r fontawesome::fa(name = "linkedin", height= "16pt", fill = "#fff")`](www.linkedin.com/in/jdbarillas/?locale=en_US)
-    [`r fontawesome::fa(name = "github-square", height= "16pt", fill = "#fff")`](https://github.com/jdbarillas)
-    [`r fontawesome::fa(name = "twitter-square", height= "16pt", fill = "#fff")`](https://twitter.com/jdbarillas)
+    [`r fontawesome::fa(name = "linkedin", height= "36pt", fill = "#41717a")`](www.linkedin.com/in/jdbarillas/?locale=en_US)
+    [`r fontawesome::fa(name = "github-square", height= "36pt", fill = "#41717a")`](https://github.com/jdbarillas)
+    [`r fontawesome::fa(name = "twitter-square", height= "36pt", fill = "#41717a")`](https://twitter.com/jdbarillas)
 direction: false
 lang: "en"
 output:
-  xaringan::moon_reader: 
+  xaringan::moon_reader:
     css: ["default", "custom-slides.css", "custom-font.css"]
     nature: 
+      ratio: 16:9
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
       self_contained: false
 ---
 
+# Session Outline
