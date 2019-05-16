@@ -1,0 +1,34 @@
+---
+title: | 
+  Leave LaTeX and Embrace HTML and CSS
+footer: | 
+  Leave LaTeX and Embrace HTML and CSS
+subtitle: |
+  with `r fontawesome::fa(name = "r-project", height= "54pt", fill = "#165caa")` and R Markdown
+author: |
+    Joshua D. Barillas   
+    [Manager, Data Analysis - AACSB International]{style="font-weight:lighter;font-size:0.7em"}\
+    2019-05-30 @AIR Forum\
+    \
+    [`r fontawesome::fa(name = "linkedin", height= "16pt", fill = "#fff")`](www.linkedin.com/in/jdbarillas/?locale=en_US)
+    [`r fontawesome::fa(name = "github-square", height= "16pt", fill = "#fff")`](https://github.com/jdbarillas)
+    [`r fontawesome::fa(name = "twitter-square", height= "16pt", fill = "#fff")`](https://twitter.com/jdbarillas)
+direction: false
+lang: "en"
+output:
+  pagedown::html_paged:
+    css:
+    - custom-fonts.css
+    - custom-page.css
+    - custom.css
+    toc: true
+    self_contained: false
+---
+
+```{r, eval=FALSE}
+files <- c("default-fonts", "default-page", "default")
+from <- pagedown:::pkg_resource(paste0("css/", files, ".css"))
+to <- c("custom-fonts.css", "custom-page.css", "custom.css")
+file.copy(from = from, to = to)
+```
+
