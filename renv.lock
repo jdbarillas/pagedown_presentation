@@ -109,6 +109,18 @@ Version=1.4-1
 Source=CRAN
 Hash=b0f7b0980ad3d9d240be0fffea1d238b
 
+[R/Package/countdown]
+Package=countdown
+Version=0.2.0
+Source=GitHub
+RemoteType=github
+RemoteHost=api.github.com
+RemoteRepo=countdown
+RemoteUsername=gadenbuie
+RemoteRef=master
+RemoteSha=c8e87104f3d3afeabea88cfce714138fb1efb0f6
+Hash=710dc2a956322ceded7011d240a6f260
+
 [R/Package/crayon]
 Package=crayon
 Version=1.3.4
@@ -145,6 +157,19 @@ Version=0.6.18
 Source=CRAN
 Hash=c53b5dd4fbd6054e2ef6b8e93f34192f
 
+[R/Package/emo]
+Package=emo
+Version=0.0.0.9000
+Source=GitHub
+Remotes=tidyverse/glue
+RemoteType=github
+RemoteHost=api.github.com
+RemoteRepo=emo
+RemoteUsername=hadley
+RemoteRef=master
+RemoteSha=02a520689861c3354f7c6b575e309280b2a3a172
+Hash=b545b08f684c53bef83001516d51ce5a
+
 [R/Package/evaluate]
 Package=evaluate
 Version=0.13
@@ -156,6 +181,18 @@ Package=fansi
 Version=0.4.0
 Source=CRAN
 Hash=a7730510208607abde04cfe3808e78e0
+
+[R/Package/fontawesome]
+Package=fontawesome
+Version=0.1.0
+Source=GitHub
+RemoteType=github
+RemoteHost=api.github.com
+RemoteRepo=fontawesome
+RemoteUsername=rstudio
+RemoteRef=master
+RemoteSha=ba97af5b52615627e1284e7c50c128a91881a16c
+Hash=8cf94ec3ff1c83923d98571c17e10463
 
 [R/Package/fs]
 Package=fs
@@ -183,9 +220,15 @@ Hash=c51d0a5757d1747919996004b36f4e1e
 
 [R/Package/glue]
 Package=glue
-Version=1.3.1
-Source=CRAN
-Hash=50f8d48c8ebbfc4b68e55bd8bb5516ca
+Version=1.3.1.9000
+Source=GitHub
+RemoteType=github
+RemoteHost=api.github.com
+RemoteRepo=glue
+RemoteUsername=tidyverse
+RemoteRef=master
+RemoteSha=ea0edcb2e50ec6737e6611badf16781f6abac944
+Hash=365242441bd3f337acb06c6845738617
 
 [R/Package/gridExtra]
 Package=gridExtra
@@ -204,6 +247,12 @@ Package=highr
 Version=0.8
 Source=CRAN
 Hash=e55de296dfdda8215e0c3fa0f4c6b84f
+
+[R/Package/hms]
+Package=hms
+Version=0.4.2
+Source=CRAN
+Hash=d37946ab470b95d250afae8502c70673
 
 [R/Package/htmltools]
 Package=htmltools
@@ -253,6 +302,12 @@ Version=1.6
 Source=CRAN
 Hash=1527c6ad6c00ff3f0d0a02b01650fd87
 
+[R/Package/kableExtra]
+Package=kableExtra
+Version=1.1.0
+Source=CRAN
+Hash=0637ed6e26a9506f26105ba5045eb458
+
 [R/Package/knitr]
 Package=knitr
 Version=1.22
@@ -288,6 +343,12 @@ Package=leaflet
 Version=2.0.2
 Source=CRAN
 Hash=297c826b19b8ce52b4fbc637df4cfaf8
+
+[R/Package/lubridate]
+Package=lubridate
+Version=1.7.4
+Source=CRAN
+Hash=ecc440cf76cdf90c0c34de6e0a0267fb
 
 [R/Package/magrittr]
 Package=magrittr
@@ -433,6 +494,12 @@ Version=1.3.3
 Source=CRAN
 Hash=c9792aa4bc60fba05b31eb57311a72fe
 
+[R/Package/readr]
+Package=readr
+Version=1.3.1
+Source=CRAN
+Hash=688155c84a00243455f69ba3ca8aecea
+
 [R/Package/remotes]
 Package=remotes
 Version=2.0.4
@@ -469,17 +536,35 @@ Version=0.10
 Source=CRAN
 Hash=0a9a57ac8bc27cafe9a3904deb2e267b
 
+[R/Package/rvest]
+Package=rvest
+Version=0.3.4
+Source=CRAN
+Hash=5a4be171aa15de640120e6bb221c4bca
+
 [R/Package/scales]
 Package=scales
 Version=1.0.0
 Source=CRAN
 Hash=4d8cef1c0d1d19b34469542ee0396904
 
+[R/Package/selectr]
+Package=selectr
+Version=0.4-1
+Source=CRAN
+Hash=1fb5dfb3e338005d14339d1f89fbc15c
+
 [R/Package/servr]
 Package=servr
-Version=0.13
-Source=CRAN
-Hash=8320f840ec4e176373628245f0ac84b8
+Version=0.13.1
+Source=GitHub
+RemoteType=github
+RemoteHost=api.github.com
+RemoteRepo=servr
+RemoteUsername=yihui
+RemoteRef=master
+RemoteSha=c80c8948a8ca7fa1ceb897f6ac81198e36c87f46
+Hash=6b1965ecb47f63d6614fb9ca27e05ced
 
 [R/Package/sessioninfo]
 Package=sessioninfo
@@ -565,6 +650,12 @@ Version=0.3.0
 Source=CRAN
 Hash=5045453f21c0128c65c2a10c776b3e47
 
+[R/Package/webshot]
+Package=webshot
+Version=0.5.1
+Source=CRAN
+Hash=b4216b37f5405f81076927b1fa15b83a
+
 [R/Package/whisker]
 Package=whisker
 Version=0.3-2
@@ -594,6 +685,12 @@ Package=xfun
 Version=0.7
 Source=CRAN
 Hash=f406ca9b3f33f92dbbf797a1e9d2dd3e
+
+[R/Package/xml2]
+Package=xml2
+Version=1.2.0
+Source=CRAN
+Hash=2cef311d8568a50184e12814c95c22bf
 
 [R/Package/xopen]
 Package=xopen
