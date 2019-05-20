@@ -12,3 +12,7 @@ code {
 pre, code {
   font-size: .95em;
 }
+
+svg {
+  vertical-align: bottom;
+}

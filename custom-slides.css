@@ -14,12 +14,14 @@
 }
 
 .title-slide h1 {
-  color: #41717a;
+  color: #18656b;
   margin-top: 150px;
+  margin-bottom: 0px;
 }
 .title-slide h2{
-  color: #41717a; 
+  color: #18656b; 
   line-height: 1.5em;
+  margin-top: 10px;
 }
 
 .title-slide h3 {
@@ -28,8 +30,9 @@
 
 h1 {
   color: #ffffff;
-  margin-top: 50px;
-  margin-bottom: 75px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+  line-height: 0.6em;
 }
 
 .title-slide .remark-slide-number {
@@ -67,4 +70,37 @@ h1 {
 
 #air_timer.finished .digits {
   color: #d83a20;
+}
+
+img[src*="#smaller"]{
+  height: 200px;
+}
+
+img[src*="#fit"]{
+  height: 400px;
+}
+
+.left-column {
+  padding-top: 15px;
+}
+
+.left-column.no-padding{
+  padding-top: 0;
+}
+
+#benefits-and-limitations-of-latex-in-the-use-of-document-publishing {
+  margin-bottom: 30px;
+}
+
+#acknowledgements {
+  margin-bottom: 125px
+}
+
+img[src*="#smallest"] {
+  height: 100px;
+}
+
+img[src*="#fit-more"] {
+  height: 335px;
+  width: 450px;
 }
