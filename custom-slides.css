@@ -104,3 +104,29 @@ img[src*="#fit-more"] {
   height: 335px;
   width: 450px;
 }
+
+[id^="air_timer"] {
+  background-color: black;
+  background-image: url(resources/media/air_brick_white.jpg);
+  background-size: auto;
+}
+
+[id^="air_timer"].running {
+  background-color: black;
+  background-image: url(resources/media/air_brick_white.jpg);
+  background-size: auto;
+  border-color: #fdd906;
+}
+
+[id^="air_timer"].finished {
+  background-color: #ffffff;
+  background-image: url(resources/media/air_brick_teal.jpg);
+  background-size: auto;
+}
+[id^="air_timer"].running .digits {
+  color: #fbc611;
+}
+
+[id^="air_timer"].finished .digits {
+  color: #d83a20;
+}
