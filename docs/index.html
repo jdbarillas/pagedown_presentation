@@ -174,7 +174,7 @@ Current templates include [JSS article, CV, letter, business cards](https://page
 ] 
 
 ---
-
+count: false
 # Acknowledgements
 
 .pull-left[
@@ -200,6 +200,17 @@ Current templates include [JSS article, CV, letter, business cards](https://page
 
 ![](https://raw.githubusercontent.com/gadenbuie/countdown/master/man/figures/countdown.gif#smallest)
 ]
+
+&lt;script&gt;
+var el = d.getElementsByClassName("remark-slides-area");
+
+slideshow.on('showSlide', function (slide) {
+  // Slide is the slide being navigated to
+  var current_slide = document.getElementsByClassName('remark-slide-container remark-visible')
+  current_timer = current_slide[0].querySelector('#air_timer')
+  current.timer.click()
+});
+&lt;/script&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
