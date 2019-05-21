@@ -200,6 +200,16 @@ count: false
 
 ![](https://raw.githubusercontent.com/gadenbuie/countdown/master/man/figures/countdown.gif#smallest)
 ]
+
+&lt;script&gt;
+slideshow.on('afterShowSlide', function(slide) { 
+  n_slide = slide.getSlideIndex();
+  current_timer = document.querySelector('#air_timer_' + n_slide);
+  if (!current_timer) return;
+  current_timer.click();
+  console.log(n_slide);
+});
+&lt;/script&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

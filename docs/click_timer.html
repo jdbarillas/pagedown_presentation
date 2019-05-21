@@ -1,3 +1,4 @@
+<script>
 slideshow.on('afterShowSlide', function(slide) { 
   n_slide = slide.getSlideIndex();
   current_timer = document.querySelector('#air_timer_' + n_slide);
@@ -5,3 +6,4 @@ slideshow.on('afterShowSlide', function(slide) {
   current_timer.click();
   console.log(n_slide);
 });
+</script>
