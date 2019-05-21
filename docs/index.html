@@ -6,6 +6,13 @@
     <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="index_files/countdown-0.2.0/countdown.css" rel="stylesheet" />
     <script src="index_files/countdown-0.2.0/countdown.js"></script>
+    slideshow.on('afterShowSlide', function(slide) { 
+      n_slide = slide.getSlideIndex();
+      current_timer = document.querySelector('#air_timer_' + n_slide);
+      if (!current_timer) return;
+      current_timer.click();
+      console.log(n_slide);
+    });
     <link rel="stylesheet" href="custom-slides.css" type="text/css" />
     <link rel="stylesheet" href="custom-font.css" type="text/css" />
   </head>
@@ -259,13 +266,6 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();</script>
-slideshow.on('afterShowSlide', function(slide) { 
-  n_slide = slide.getSlideIndex();
-  current_timer = document.querySelector('#air_timer_' + n_slide);
-  if (!current_timer) return;
-  current_timer.click();
-  console.log(n_slide);
-});
 
 <script>
 (function() {
