@@ -24,6 +24,10 @@ output:
       highlightLines: true
       countIncrementalSlides: false
       self_contained: false
+    includes:
+      after_body: click_timer.js
+output_dir: "docs/"
+output_file: "index.html"
 ---
 
 ```{r setup, include=FALSE}
@@ -33,7 +37,7 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 ```
 
 ```{r}
-countdown::countdown(minutes = 0, seconds = 55, left = 0, id = "air_timer", font_size = "1.5em")
+countdown::countdown(minutes = 0, seconds = 55, left = 0, id = "air_timer_1", font_size = "1.5em", class = "slide_1")
 ```
 
 # Benefits and Limitations of $\LaTeX$ in the use of document publishing
@@ -77,7 +81,7 @@ Limitations:
 ---
 
 ```{r}
-countdown::countdown(minutes = 0, seconds = 55, left = 0, id = "air_timer", font_size = "1.5em")
+countdown::countdown(minutes = 0, seconds = 55, left = 0, id = "air_timer_2", font_size = "1.5em", class = "slide_2")
 ```
 
 # Reproducible Workflow using R Markdown
@@ -103,20 +107,20 @@ Output formats:
 
 .pull-left[
 
- Text in markdown:  
+1. Text in markdown:  
  
- .center[Write \&#95;\&#95;what\&#95;\&#95; you want \&#95;however\&#95; you want]
- .center[`r fontawesome::fa(name = "arrow-down", height = "12pt", fill = "black")`] 
- .center[Write __what__ you want _however_ you want]
+  .center[Write \&#95;\&#95;what\&#95;\&#95; you want \&#95;however\&#95; you want]
+  .center[`r fontawesome::fa(name = "arrow-down", height = "12pt", fill = "black")`] 
+  .center[Write __what__ you want _however_ you want]  
  
-  Inline or Chunks of Code:  
+2. Inline or Chunks of Code:  
   
- .center[Today's date is \&#96;\&#96; `r knitr::inline_expr("Sys.Date()")` \&#96;\&#96;]
- .center[`r fontawesome::fa(name = "arrow-down", height = "12pt", fill = "black")`] 
- .center[Today's date is `r Sys.Date()`] 
+  .center[Today's date is \&#96;\&#96; `r knitr::inline_expr("Sys.Date()")` \&#96;\&#96;]
+  .center[`r fontawesome::fa(name = "arrow-down", height = "12pt", fill = "black")`] 
+  .center[Today's date is `r Sys.Date()`]  
  
- Figures:
- .center[
+3. Figures:
+  .center[
  
 ```{r fig.height=1.5, fig.width=4}
 ggplot(mtcars) +
@@ -134,7 +138,7 @@ ggplot(mtcars) +
 
 
 ```{r}
-countdown::countdown(minutes = 2, seconds = 55, left = 0, id = "air_timer", font_size = "1.5em")
+countdown::countdown(minutes = 2, seconds = 55, left = 0, id = "air_timer_3", font_size = "1.5em", class = "slide_3")
 ```
 
 # Paged Documents with HTML & CSS
@@ -163,7 +167,7 @@ countdown::countdown(minutes = 2, seconds = 55, left = 0, id = "air_timer", font
 ---
 
 ```{r}
-countdown::countdown(minutes = 1, seconds = 55, left = 0, id = "air_timer", font_size = "1.5em")
+countdown::countdown(minutes = 1, seconds = 55, left = 0, id = "air_timer_4", font_size = "1.5em", class = "slide_4")
 ```
 
 # How any R user can get started 
@@ -184,7 +188,7 @@ Current templates include [JSS article, CV, letter, business cards](https://page
 ] 
 
 ---
-
+count: false
 # Acknowledgements
 
 .pull-left[
