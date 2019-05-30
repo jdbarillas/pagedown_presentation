@@ -11,6 +11,7 @@
   background-size: cover;
   background-color: #ffffff;
   text-shadow: none;
+  font-size: 18px;
 }
 
 .title-slide h1 {
@@ -90,6 +91,7 @@ img[src*="#fit"]{
 
 #benefits-and-limitations-of-latex-in-the-use-of-document-publishing {
   margin-bottom: 30px;
+  font-size: 46px;
 }
 
 #acknowledgements {
