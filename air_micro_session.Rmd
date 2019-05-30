@@ -25,7 +25,7 @@ output:
       countIncrementalSlides: false
       self_contained: false
     includes:
-      after_body: click_timer.js
+      after_body: click_timer.html
 output_dir: "docs/"
 output_file: "index.html"
 ---
@@ -134,18 +134,22 @@ ggplot(mtcars) +
     ![](resources/media/rmarkdown.JPG#fit-more)
   ]
 ]
+
+???
+
+Reproducible documents: If error discovered, or if additional data, can just re-compile the report and get new or corrected results. Versus having to reconstruct figures and tables, paste them into a Word document, and further hand-edit various detailed results. **LITERATE PROGRAMMING**
 ---
 
 
 ```{r}
-countdown::countdown(minutes = 2, seconds = 55, left = 0, id = "air_timer_3", font_size = "1.5em", class = "slide_3")
+countdown::countdown(minutes = 1, seconds = 55, left = 0, id = "air_timer_3", font_size = "1.5em", class = "slide_3")
 ```
 
 # Paged Documents with HTML & CSS
 
 .left-column[
   ![](https://www.w3.org/TR/css-page-3/images/PageBox.png#smaller)
-  ![](https://www.w3.org/TR/css-page-3/images/LeftMarginBoxes.png#smaller)
+  ![](https://www.pagedmedia.org/wp-content/uploads/2018/11/9d1dd9cee0c92ee1d7865d7a0ba428d7.svg#smaller)
 ]
 
 .right-column[
@@ -162,12 +166,71 @@ countdown::countdown(minutes = 2, seconds = 55, left = 0, id = "air_timer_3", fo
     - Chrome's Print to PDF 
 ]
 
+???
 
+Paged.js is a _polyfill_ for Paged Media and Generated Content for Paged Media CSS modules
+
+A polyfill is code that implements a feature on web browsers that do not support the feature
+
+In development, so expect bugs, workarounds, and exciting possibilities
 
 ---
 
 ```{r}
-countdown::countdown(minutes = 1, seconds = 55, left = 0, id = "air_timer_4", font_size = "1.5em", class = "slide_4")
+countdown::countdown(minutes = 1, seconds = 0, left = 0, id = "air_timer_4", font_size = "1.5em", class = "slide_3")
+```
+
+# Paged Documents with HTML & CSS
+
+.pull-left[
+  ![](resources/media/pagedDesign.JPG)
+  [Paged Design](https://paged.design/)
+]
+
+.pull-right[
+
+```{css, echo = TRUE}
+@page {
+  size: A5;
+}
+# or
+@page {
+  size: 140mm 200mm;
+}
+```
+
+```{css, echo = TRUE}
+@page {
+  margin: 1in 2in .5in 2in;
+}
+@page {
+  @top-center {
+        content: "Moby-Dick";
+  }
+}
+```
+
+```{css, echo = TRUE}
+h1 {
+      break-before: page;
+}
+```
+
+]
+
+???
+
+Example of paged document on left by paged.design
+
+Use CSS to specify:
+ - the size of the pages
+ - dimensions and content of margins
+ - where to fragment text (page breaks)
+
+---
+
+```{r}
+countdown::countdown(minutes = 1, seconds = 55, left = 0, id = "air_timer_5", font_size = "1.5em", class = "slide_4")
 ```
 
 # How any R user can get started 
@@ -187,24 +250,40 @@ Current templates include [JSS article, CV, letter, business cards](https://page
   ]
 ] 
 
+???
+
+Uses Paged.js polyfill to implement CSS support 
+R Markdown document, means all the advantages are available
+Most stable in Chrome browser
+Customizable using HTML/CSS:
+ - add university design
+ - work with marketing dept/webmaster
+ - Combine the content creation and styling
+ - Perfect for reports where styling does not change a lot (annual reports)
 ---
 count: false
 # Acknowledgements
 
 .pull-left[
-* Xaringan package (used to create these slides)
+* [Xaringan](https://slides.yihui.name/xaringan/#1) package (used to create these slides)
   + Yihui Xie [`r fontawesome::fa(name = "github-square", height= "24pt", fill = "#41717a")`](https://github.com/yihui)
     [`r fontawesome::fa(name = "twitter-square", height= "24pt", fill = "#41717a")`](https://twitter.com/xieyihui)
 
-* Pagedown
+* [Pagedown](https://pagedown.rbind.io/) package
   + Yihui Xie [`r fontawesome::fa(name = "github-square", height= "24pt", fill = "#41717a")`](https://github.com/yihui)
     [`r fontawesome::fa(name = "twitter-square", height= "24pt", fill = "#41717a")`](https://twitter.com/jdbarillas)
   + Romain Lesur [`r fontawesome::fa(name = "github-square", height= "24pt", fill = "#41717a")`](https://github.com/RLesur)
     [`r fontawesome::fa(name = "twitter-square", height= "24pt", fill = "#41717a")`](https://twitter.com/RLesur)
   
-* Countdown timer
+* [Countdown](https://pkg.garrickadenbuie.com/countdown/#1) timer
   + Garrick Aden-Buie [`r fontawesome::fa(name = "github-square", height= "24pt", fill = "#41717a")`](https://github.com/gadenbuie/)
     [`r fontawesome::fa(name = "twitter-square", height= "24pt", fill = "#41717a")`](https://twitter.com/grrrck)
+    
+* [Paged.js](https://www.pagedmedia.org/paged-js/) team: 
+  + Adam Hyde
+  + Julie Blanc
+  + Fred Chasen
+  + Julien Taquet
 ]
 
 .pull-right[
@@ -213,4 +292,6 @@ count: false
 ![](https://user-images.githubusercontent.com/163582/51942716-66be4180-23dd-11e9-8dbc-fdb4f465d1c2.png#smallest)  
 
 ![](https://raw.githubusercontent.com/gadenbuie/countdown/master/man/figures/countdown.gif#smallest)
+
+![](https://www.pagedmedia.org/wp-content/uploads/2018/12/pagedjs-logo.png#smallest)
 ]

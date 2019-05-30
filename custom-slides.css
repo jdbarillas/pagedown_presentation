@@ -93,11 +93,12 @@ img[src*="#fit"]{
 }
 
 #acknowledgements {
-  margin-bottom: 125px
+  margin-bottom: 80px;
 }
 
 img[src*="#smallest"] {
   height: 100px;
+  max-width: 250px;
 }
 
 img[src*="#fit-more"] {
